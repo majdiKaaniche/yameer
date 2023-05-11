@@ -9,7 +9,7 @@ COPY nginx.default /etc/nginx/sites-available/default
 # link nginx logs to container stdout
 RUN ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/nginx/error.log
 
-# copy the django code
+# copy the project code to /app directory
 COPY ./yameer /app
 
 # change our working directory to the django project root
