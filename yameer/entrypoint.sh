@@ -1,5 +1,5 @@
 #!/bin/bash
-RUN_PORT="8020"
+RUN_PORT="8010"
 
 cd yameer;
 /opt/venv/bin/python manage.py migrate --no-input
