@@ -5,7 +5,7 @@ upstream yameer_project {
 error_log /var/log/nginx/error.log;
 
 server {
-    listen       80;
+    listen       8080;
     access_log /var/log/nginx/access.log;
 
     location / {
