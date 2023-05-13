@@ -22,6 +22,8 @@ RUN python -m venv /opt/venv && \
     /opt/venv/bin/python -m pip install pip --upgrade && \
     /opt/venv/bin/python -m pip install -r ./requirements.txt
 
+EXPOSE 8080
+
 # make our entrypoint.sh executable
 RUN chmod +x entrypoint.sh
 
