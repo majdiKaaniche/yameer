@@ -11,7 +11,7 @@ RUN ln -sf /dev/stdout /var/log/nginx/access.log && ln -sf /dev/stderr /var/log/
 
 # copy the project code to /app directory
 COPY ./yameer /app
-RUN ls -l /app
+
 # change our working directory to the django project root
 WORKDIR /app
 
